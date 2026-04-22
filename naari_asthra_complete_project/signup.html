@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sign Up</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+    body{
+    background-image: url("../images/3p.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+</style>
+<body>
+    <nav>
+<img src="images/girllogo.jpg" class="navlogo">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="signup.html">Sign Up</a></li>
+<li><a href="signin.html">Sign In</a></li>
+<li><a href="profile.html">Profile</a></li>
+<li><a href="dashboard.html">Safety</a></li>
+</ul>
+</nav>
+</br>
+<form id="signupForm">
+<div class="formcard">
+<h2>Create Account</h2>
+        <form>
+            <div class="input-group">
+                
+                <input type="text" placeholder="e.g. John Doe" required></br>
+            </div></br>
+            <div class="input-group">
+                <label>Phone Number</label></br></br>
+                <input type="tel" placeholder="+1 (555) 000-0000" required></br>
+            </div></br>
+            <div class="input-group">
+                <label>Email Address</label></br></br>
+                <input type="email" placeholder="name@company.com" required></br>
+            </div></br>
+            <div class="input-group">
+                <label>Password</label></br></br>
+                <input type="password" placeholder="••••••••" required></br>
+            </div></br></br>
+            <button type="submit">Sign Up</button></br></br>
+        </form>
+        <p class="footer-text">Already have an account? <a href="#"><a href="signin.html">Sign In</a></a></p>
+        
+    </div>
+</div>
+</form>
+<script>
+function saveAndRedirect() {
+    // 1. Get the values from the inputs
+    const name = document.getElementById('fullName').value;
+    const phone = document.getElementById('phone').value;
+    const email = document.getElementById('email').value;
+
+    // 2. Store them in localStorage
+    localStorage.setItem('userName', name);
+    localStorage.setItem('userPhone', phone);
+    localStorage.setItem('userEmail', email);
+
+    // 3. Move to the profile page
+    window.location.href = "profile.html"; 
+
+}
+

@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:rgb(249, 248, 249);
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: rgb(20, 17, 17);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navlogo {
+    height: 50px;
+    color: black;
+}
+
+.hero {
+    background: #6a0dad;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+.info {
+    padding: 40px;
+    text-align: center;
+}
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.formbg {
+    background: linear-gradient(purple, white);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formcard {
+    background: white;
+    padding: 30px;
+    margin-left: 450px;
+    border-radius: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+input {
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+    background: #6a0dad;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.dashbg {
+    text-align: center;
+    padding: 50px;
+    background: #fbfafb;
+    height: 100vh;
+}
+
+.sos{
+background:rgb(241, 11, 11);
+color:white;
+width:120px;
+height:120px;
+border-radius:60px;
+font-size:22px;
+margin:20px;
+animation:pulse 10s infinite;
+}
+
+.actions button {
+    margin: 10px;
+}
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar{
+    position: fixed;   /* THIS MAKES IT STAY */
+    top: 0;
+    width: 97%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.content{
+    margin-top: 80px; /* prevent content hiding under navbar */
+}
+/* Styling for the logout button */
+.btn-logout {
+    background-color: #ff4d4d; /* Red color for logout */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px; /* Space from the info above */
+    width: 100%;      /* Optional: makes it full width */
+    transition: background 0.3s ease;
+}
+
+.btn-logout:hover {
+    background-color: #cc0000; /* Darker red on hover */
+}
+
+/* Ensure the container pushes the button to the bottom */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Adjust based on your layout */
+}
+
+.user-profile-card {
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    width: 300px;
+    text-align: left;
+    /* Positioning it over the background */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

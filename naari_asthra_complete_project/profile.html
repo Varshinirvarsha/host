@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Profile</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+    body{
+    background-image: url("../images/3p.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+div{
+    align-items: c;
+}
+</style>
+<body>
+<nav>
+<img src="images/girllogo.jpg" class="navlogo">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="signup.html">Sign Up</a></li>
+<li><a href="signin.html">Sign In</a></li>
+<li><a href="profile.html">Profile</a></li>
+<li><a href="dashboard.html">Safety</a></li>
+</ul>
+</nav>
+</br>
+<div class="formcard">
+<h2>User Profile</h2>
+<div id="profileContainer">
+    <p><strong>Name:</strong> <span id="displayBtnName"></span></p>
+    <p><strong>Phone:</strong> <span id="displayPhone"></span></p>
+    <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+
+
+<button id="logout-button" class="btn-logout">Log Out</button>
+</div>
+</div>
+</div>
+<script>
+    // This runs as soon as the profile page loads
+    window.onload = function() {
+        document.getElementById('displayBtnName').innerText = localStorage.getItem('userName');
+        document.getElementById('displayPhone').innerText = localStorage.getItem('userPhone');
+        document.getElementById('displayEmail').innerText = localStorage.getItem('userEmail');
+    }
+
+
+
+</script>
+</body>
+</html>
